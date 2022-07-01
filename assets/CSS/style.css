@@ -149,6 +149,7 @@ FIN - ESTRUCTURA
 INICIO CUIDADOS
 -----------------------------------*/
 .cardCuidados{
+    background-color: white;
     border-color: black;
     border-width: 1px;
     border-radius: 10px;
