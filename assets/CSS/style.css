@@ -26,6 +26,10 @@ body{
 
 .btn :hover { color: blueviolet;}
 
+.mayus{
+    text-transform: uppercase;
+}
+
 /*----------------------------------
 INICIO ESTRUCTURA
 -----------------------------------*/
@@ -145,22 +149,20 @@ FIN - ESTRUCTURA
 INICIO CUIDADOS
 -----------------------------------*/
 .cardCuidados{
-    background-color: darkgray;
+    border-color: black;
+    border-width: 1px;
     border-radius: 10px;
-    padding: 20px;
-    margin: 10PX;
 }
 
 .card-title{
     font-size: 20px;
     font-weight: 900;
-    text-align: center
+ }
+
+.page-link {
+    color: black;
 }
 
-.card-text{
-    text-align: center;
-
-}
 
 /*----------------------------------
 FIN CUIDADOS
