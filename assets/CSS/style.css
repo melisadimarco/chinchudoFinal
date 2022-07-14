@@ -17,16 +17,22 @@ html a:hover {
 html body {
   background-color: white;
 }
-html .btn {
+html .btn, html .btn-secundario, html .btn-primario {
   background-color: black;
   color: white;
   border-radius: 10px;
 }
-html .btn:hover {
+html .btn:hover, html .btn-secundario:hover, html .btn-primario:hover {
   color: blueviolet;
 }
 html .mayus {
   text-transform: uppercase;
+}
+html .h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
 }
 
 .nav {
@@ -49,6 +55,68 @@ html .mayus {
   color: blueviolet;
 }
 
+.tituloContenedor {
+  background-color: darkgray;
+  border-radius: 10px;
+  height: 70px;
+  color: black;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.encabezado {
+  margin: 20px;
+}
+
+.secundario {
+  background-color: darkslategray;
+}
+.secundario .newsletterImg {
+  max-height: 60px;
+}
+.secundario .newsletterTarjeta {
+  color: white;
+  font-size: 20px;
+}
+.secundario .email {
+  width: 400px;
+  margin: 10px;
+}
+.secundario .newsletterBtn {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+.secundario .newsletterBtn:hover {
+  color: blueviolet;
+}
+
+.cardCuidados {
+  background-color: darkgray;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+}
+.cardCuidados .card-title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.img-fluid {
+  height: 700px;
+}
+
+.instagram-media {
+  height: 700px;
+}
+
+.tarjetas {
+  padding: 20px;
+}
+
 .footer {
   background-color: black;
   height: 8rem;
@@ -68,116 +136,130 @@ html .mayus {
   height: 4rem;
 }
 
-/*----------------------------------
-INICIO ESTRUCTURA
------------------------------------*/
-.h1 {
-  color: white;
-  font-size: 40px;
-  font-weight: 900;
-  text-align: center;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.principalContenedor {
-  background-color: black;
-  max-height: 100px;
-  padding: 20px;
-  width: auto;
-  height: 100px;
+.col-1 {
+  width: 10%;
 }
 
-.encabezado {
-  margin: 20px;
+.col-2 {
+  width: 20%;
 }
 
-.caracteristicas {
-  color: white;
-  font-size: 15px;
-  margin-top: 1rem;
-}
-.caracteristicas Img {
-  width: 80px;
+.col-3 {
+  width: 30%;
 }
 
-.tituloContenedor {
+.col-4 {
+  width: 40%;
+}
+
+.col-5 {
+  width: 50%;
+}
+
+.col-6 {
+  width: 60%;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+.col-8 {
+  width: 80%;
+}
+
+.col-9 {
+  width: 90%;
+}
+
+.col-10 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-md-1 {
+    width: 10%;
+  }
+  .col-md-2 {
+    width: 20%;
+  }
+  .col-md-3 {
+    width: 30%;
+  }
+  .col-md-4 {
+    width: 40%;
+  }
+  .col-md-5 {
+    width: 50%;
+  }
+  .col-md-6 {
+    width: 60%;
+  }
+  .col-md-7 {
+    width: 70%;
+  }
+  .col-md-8 {
+    width: 80%;
+  }
+  .col-md-9 {
+    width: 90%;
+  }
+  .col-md-10 {
+    width: 100%;
+  }
+}
+.justify-content-start {
+  justify-content: start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.btn-primario {
   background-color: darkgray;
-  border-radius: 10px;
-  height: 70px;
-  color: black;
-  font-size: 50px;
-  font-weight: 900;
-  text-align: center;
 }
 
-.instagram-media {
-  height: 700px;
-}
-
-.tarjetas {
-  padding: 20px;
-}
-
-.secundario {
+.btn-secundario {
   background-color: darkslategray;
 }
 
-.newsletterImg {
-  max-height: 60px;
+.btn, .btn-primario, .btn-secundario {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 5px;
+  width: 100px;
+  height: auto;
+  color: rgb(230, 16, 16);
 }
 
-.newsletterTarjeta {
-  color: white;
-  font-size: 20px;
-}
-
-.email {
-  width: 400px;
-  margin: 10px;
-}
-
-.newsletterBtn {
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-}
-.newsletterBtn:hover {
-  color: blueviolet;
-}
-
-/*----------------------------------
-FIN - ESTRUCTURA
------------------------------------*/
-/*----------------------------------
-INICIO CUIDADOS
------------------------------------*/
-.cardCuidados {
-  background-color: darkgray;
-  border-color: black;
-  border-width: 1px;
-  border-radius: 10px;
-}
-
-.card-title {
-  font-size: 20px;
-  font-weight: 900;
-}
-
-.page-link {
-  color: black;
-}
-
-/*----------------------------------
-FIN CUIDADOS
------------------------------------*/
-/*----------------------------------
-FIN TRABAJOS
------------------------------------*/
-.img-fluid {
-  height: 700px;
-}
-
-/*----------------------------------
-FIN TRABAJOS
------------------------------------*//*# sourceMappingURL=style.css.map */
+.card {
+  display: flex;
+  height: 100px;
+  margin: 5px;
+  align-items: center;
+  width: 500px;
+  height: auto;
+  color: rgb(0, 0, 0);
+}/*# sourceMappingURL=style.css.map */
